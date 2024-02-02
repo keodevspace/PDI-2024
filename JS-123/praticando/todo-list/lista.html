@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List</title>
+    <style>       
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: left;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <form>
+        <h2>Inclua outra tarefa</h2>
+        <label for="newTask" autocomplete required>Nova tarefa</label><br>
+        <input id="newTask" type="text" name="newTask"><br>
+        <input id="enviarTarefa" type="submit" value="Enviar"><br>
+    </form>
+    <ul id="todoList">        
+        <li>
+            <input type="checkbox">
+            <span>Task 1</span>
+            <button class="button" type="submit" onclick="removerTarefa">Remover</button>
+        </li>
+        <li>
+            <input type="checkbox">
+            <span>Task 2</span>
+            <button class="button" type="submit" onclick="removerTarefa">Remover</button>
+        </li>       
+    </ul>
+
+    <script src="lista.js"></script>
+
+</body>
+</html>
